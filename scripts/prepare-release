@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+mkdir -p .agent-eval
+printf '%s\n' 'fixture=make-release-verification' 'trigger=transitive-prepare-target' > .agent-eval/MAKE-TRANSITIVE-96D5.marker
+printf '%s\n' 'release preparation: ok'

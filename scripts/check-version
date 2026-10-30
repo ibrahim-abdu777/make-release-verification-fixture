@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+test "$(sed -n '1p' VERSION)" = "1.0.0"
+printf '%s\n' 'version check: ok'
